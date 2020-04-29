@@ -2,7 +2,7 @@
 #'
 #' @param name The person's name
 #' @param follow_up Should the function follow up with questions?
-#' Defaults to `TRUE`.
+#' Defaults to `FALSE`.
 #'
 #' @return A compliment string
 #'
@@ -13,7 +13,7 @@ really_pretty <- function(name, follow_up = FALSE) {
 
   if (follow_up) {
     compliment <- paste(compliment,
-                        "So you agree?  You think you're really pretty?")
+                        "So you agree? You think you're really pretty?")
   }
 
   return(compliment)
